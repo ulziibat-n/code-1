@@ -1,7 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap);
+:root {
+  --bs-primary-rgb: 63, 43, 170;
+}
+
 /*--------------------------------------------------------------
 # Site Base
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
 body {
   font-family: Outfit, sans-serif;
   font-weight: 400;
@@ -44,15 +48,6 @@ h6 {
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
-.navbar-brand {
-  margin-right: 4rem;
-  width: 140px;
-  height: auto;
-}
-.navbar-nav .nav-link.active {
-  color: #3f2baa;
-}
-
 .nav-item {
   text-transform: uppercase;
   font-weight: 700;
@@ -60,28 +55,31 @@ h6 {
   letter-spacing: 1px;
 }
 .nav-link {
+  color: #000;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #3f2baa;
+}
+
+.navbar-brand {
+  margin-right: 4rem;
+  width: 140px;
+  height: auto;
+}
+.navbar-nav .nav-link .active {
+  color: #3f2baa;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 12px;
   padding-left: 12px;
-  color: #000;
 }
 
 /*--------------------------------------------------------------
-# Hero
+# Section
 --------------------------------------------------------------*/
-.hero-content {
-  position: relative;
-}
-.hero-content h1 {
-  display: block;
-}
-.hero-content p {
-  position: relative;
-}
-.hero-content a {
-  display: block;
-}
-.hero-image {
-  display: block;
+.site-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
