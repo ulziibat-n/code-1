@@ -1,0 +1,22 @@
+.hero {
+
+	&-content {
+		position: relative;
+
+		h1 {
+			display: block;
+		}
+
+		p {
+			position: relative;
+		}
+
+		a {
+			display: block;
+		}
+	}
+
+	&-image {
+		display: block;
+	}
+}

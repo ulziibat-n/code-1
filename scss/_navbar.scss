@@ -1,0 +1,33 @@
+.navbar {
+
+	&-brand {
+		margin-right: 4rem;
+		width: 140px;
+		height: auto;
+	}
+
+	&-nav {
+
+		.nav-link.active {
+			color: $color-primary;
+		}
+	}
+}
+
+.nav {
+
+	&-item {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 13px;
+		letter-spacing: 1px;
+
+
+	}
+
+	&-link {
+		padding-right: 12px;
+		padding-left: 12px;
+		color: $color-black;
+	}
+}

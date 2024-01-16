@@ -9,3 +9,5 @@ assets/images
 LICENSE
 composer.lock
 *.txt
+/css/*.css
+*.html

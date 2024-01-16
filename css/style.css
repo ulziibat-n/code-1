@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Site Base
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: Outfit, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #52596e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Outfit, sans-serif;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 9px 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+  margin-left: 0.5rem;
+}
+.btn-primary {
+  background-color: #3f2baa;
+  border-color: #3f2baa;
+}
+.btn-primary:hover {
+  background-color: #372696;
+  border-color: #372696;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar-brand {
+  margin-right: 4rem;
+  width: 140px;
+  height: auto;
+}
+.navbar-nav .nav-link.active {
+  color: #3f2baa;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.nav-link {
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #000;
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+.hero-content {
+  position: relative;
+}
+.hero-content h1 {
+  display: block;
+}
+.hero-content p {
+  position: relative;
+}
+.hero-content a {
+  display: block;
+}
+.hero-image {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

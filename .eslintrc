@@ -1,52 +1,7 @@
 {
 	"extends": [
-		"plugin:@wordpress/eslint-plugin/custom",
-		"plugin:@wordpress/eslint-plugin/es5",
-		"plugin:@wordpress/eslint-plugin/jsdoc"
+		"plugin:@wordpress/eslint-plugin/jshint"
 	],
-	"globals": {
-		"document": "readonly",
-		"location": "readonly",
-		"window": "readonly",
-		"navigator": "readonly",
-		"wp": "readonly",
-		"_": "readonly",
-		"NodeList": "readonly",
-		"Element": "readonly",
-		"$": true,
-		"jQuery": true,
-		"VideoWorker": true,
-		"gsap": true,
-		"SplitText": true,
-		"Power0": true,
-		"Power1": true,
-		"Power2": true,
-		"Power3": true,
-		"Power4": true,
-		"Back": true,
-		"Elastic": true,
-		"Bounce": true,
-		"Rough": true,
-		"SlowMo": true,
-		"Stepped": true,
-		"Circ": true,
-		"Sine": true,
-		"Expo": true,
-		"Linear": true,
-		"ScrollTrigger": true,
-		"barba": true,
-		"barbaPrefetch": true,
-		"Scrollbar": true,
-		"OverscrollPlugin": true,
-		"SVGInject": true,
-		"DEBUG": true,
-		"ub_ajax_params": true
-	},
-	"rules": {
-		"comma-dangle": "off",
-		"no-console": "off"
-	},
-	"parser": "babel-eslint",
 	"env": {
 		"browser": true,
 		"node": true
