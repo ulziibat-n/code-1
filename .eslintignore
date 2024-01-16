@@ -1,0 +1,6 @@
+vendor/
+node_modules/
+assets/
+src/js/admin-editor.js
+*.xml
+8.dist
