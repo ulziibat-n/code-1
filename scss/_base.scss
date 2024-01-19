@@ -1,5 +1,5 @@
 @use "sass:color";
-@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap);
 
 body {
 	font-family: Outfit, sans-serif;
@@ -19,26 +19,34 @@ h6 {
 }
 
 .btn {
-	padding: 9px 24px;
-	text-transform: uppercase;
+	padding: 8px 24px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-style: normal;
 	font-weight: 700;
-	font-size: 14px;
-	letter-spacing: 1px;
-
-	&-icon {
-		width: 24px;
-		height: 24px;
-		aspect-ratio: 1;
-		margin-left: 0.5rem;
-	}
+	line-height: normal;
+	letter-spacing: 0.55px;
+	text-transform: uppercase;
 
 	&-primary {
-		background-color: $color-primary;
+		background: $color-primary;
 		border-color: $color-primary;
 
-		&:hover {
-			background-color: color.adjust($color-primary, $lightness: -5%);
-			border-color: color.adjust($color-primary, $lightness: -5%);
+		&:hover,
+		&:focus {
+			background: color.adjust($color-primary, $lightness: -10%);
+			border-color: color.adjust($color-primary, $lightness: -10%);
+		}
+	}
+
+	&.has-icon {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		svg {
+			width: 24px;
+			height: 24px;
 		}
 	}
 }
