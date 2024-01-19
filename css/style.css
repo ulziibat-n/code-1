@@ -96,7 +96,13 @@ h6 {
 /*--------------------------------------------------------------
 # Container
 --------------------------------------------------------------*/
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   padding-right: 2rem;
   padding-left: 2rem;
 }
