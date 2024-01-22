@@ -114,13 +114,61 @@ h6 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .site-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
 .site-section.small-padding {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+@media (max-width: 768px) {
+  .site-section.small-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .site-section.no-padding {
   padding-top: 0;
   padding-bottom: 0;
+}
+.site-section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+  align-items: center;
+}
+.site-section-title span {
+  color: #3f2baa;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+.site-section-title h2 {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 600px;
+}
+.site-section-title p {
+  color: #52596e;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  max-width: 700px;
 }
 
 /*--------------------------------------------------------------
@@ -229,6 +277,179 @@ h6 {
 .logos-wrapper img {
   width: 100%;
   height: auto;
+}
+
+/*--------------------------------------------------------------
+# About Seciton
+--------------------------------------------------------------*/
+.about-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  aspect-ratio: 1/1.14;
+}
+@media (max-width: 768px) {
+  .about-image {
+    aspect-ratio: 2/1.5;
+  }
+}
+.about-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+}
+.about-content {
+  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .about-content {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .about-content {
+    padding-left: 0;
+    padding-top: 48px;
+  }
+}
+.about-content > span {
+  color: #3f2baa;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.about-content h2 {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+@media (max-width: 992px) {
+  .about-content h2 {
+    font-size: 24px;
+  }
+}
+.about-content p {
+  color: #52596e;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.about-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+@media (max-width: 992px) {
+  .about-content ul {
+    margin: 16px 0;
+  }
+}
+.about-content ul li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.about-content ul li svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.about-content ul li span {
+  color: #52596e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Seciton
+--------------------------------------------------------------*/
+.portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.portfolio-card {
+  width: 33.333333%;
+  padding: 16px;
+}
+@media (max-width: 992px) {
+  .portfolio-card {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-card {
+    width: 100%;
+  }
+}
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #3f2baa;
+  position: relative;
+  padding: 24px;
+  border-radius: 12px;
+}
+.portfolio-content > svg {
+  width: 96px;
+  margin: 48px 0;
+}
+@media (max-width: 576px) {
+  .portfolio-content > svg {
+    width: 64px;
+    margin: 32px 0;
+  }
+}
+.portfolio-content a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 10;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px;
+}
+.portfolio-content a svg {
+  margin: 0;
+  width: 32px;
+  height: 32px;
+}
+.portfolio-content h3 {
+  color: #52596e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.portfolio-content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
