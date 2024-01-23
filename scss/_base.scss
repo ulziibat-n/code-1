@@ -37,6 +37,10 @@ h6 {
 			background: color.adjust($color-primary, $lightness: -10%);
 			border-color: color.adjust($color-primary, $lightness: -10%);
 		}
+
+		> span {
+			color: $color-white !important;
+		}
 	}
 
 	&.has-icon {
@@ -48,5 +52,10 @@ h6 {
 			width: 24px;
 			height: 24px;
 		}
+	}
+
+	&.is-full {
+		justify-content: center;
+		width: 100%;
 	}
 }

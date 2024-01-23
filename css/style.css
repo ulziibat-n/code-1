@@ -41,6 +41,9 @@ h6 {
   background: #302181;
   border-color: #302181;
 }
+.btn-primary > span {
+  color: #fff !important;
+}
 .btn.has-icon {
   display: flex;
   align-items: center;
@@ -49,6 +52,10 @@ h6 {
 .btn.has-icon svg {
   width: 24px;
   height: 24px;
+}
+.btn.is-full {
+  justify-content: center;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -134,14 +141,7 @@ h6 {
   padding-top: 0;
   padding-bottom: 0;
 }
-.site-section-title {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 48px;
-  align-items: center;
-}
-.site-section-title span {
+.site-section span {
   color: #3f2baa;
   font-size: 12px;
   font-style: normal;
@@ -150,9 +150,8 @@ h6 {
   text-transform: uppercase;
   margin: 0;
 }
-.site-section-title h2 {
+.site-section h2 {
   color: #000;
-  text-align: center;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -161,14 +160,53 @@ h6 {
   margin: 0;
   max-width: 600px;
 }
-.site-section-title p {
+.site-section p {
   color: #52596e;
-  text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   margin: 0;
   max-width: 700px;
+}
+.site-section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+  align-items: center;
+  text-align: center;
+}
+.site-section-title.is-horizontal {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .site-section-title.is-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: center;
+  }
+}
+.site-section-title-left {
+  width: auto;
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .site-section-title-left {
+    width: 100%;
+  }
+}
+.site-section-title-right {
+  max-width: 35%;
+}
+@media (max-width: 768px) {
+  .site-section-title-right {
+    max-width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -450,6 +488,70 @@ h6 {
   font-weight: 300;
   line-height: normal;
   margin-bottom: 24px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Seciton
+--------------------------------------------------------------*/
+.pricing-content {
+  padding: 32px 56px;
+  border: 1px solid #3f2baa;
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .pricing-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing-content {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+@media (max-width: 576px) {
+  .pricing-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.pricing-content h3 {
+  color: #3f2baa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.pricing-content span {
+  color: #52596e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+.pricing-content svg {
+  margin-right: 12px;
+}
+.pricing-content ul {
+  list-style: none;
+  padding: 32px 0;
+  margin: 32px 0;
+  border-top: 1px solid rgba(18, 12, 48, 0.1);
+  border-bottom: 1px solid rgba(18, 12, 48, 0.1);
+}
+@media (max-width: 992px) {
+  .pricing-content ul {
+    font-size: 16px;
+  }
+}
+.pricing-content ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
