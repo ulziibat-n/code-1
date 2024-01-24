@@ -18,6 +18,52 @@
 		@include breakpoint-down(md) {
 			width: 100%;
 		}
+
+		&.aos-init {
+			transition-property: all;
+			transition-duration: 1s;
+			transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+			transition-delay: calc(0.1s * var(--item-index));
+			border-color: transparent;
+
+			.portfolio-content {
+
+				svg,
+				h3,
+				p {
+					opacity: 0;
+					transform: translateY(50px);
+					transition: all;
+					transition-duration: 0.5s;
+					transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+					transition-delay: calc(1s + calc(0.1s * var(--item-index)));
+				}
+
+				svg {
+					transform: scale(0) translateY(30px);
+				}
+			}
+
+			&.aos-animate {
+				border-color: $color-primary;
+
+				.portfolio-content {
+
+					svg,
+					h3,
+					p {
+						opacity: 1;
+						transform: translateY(0);
+					}
+
+					svg {
+						transform: scale(1) translateY(0);
+					}
+				}
+			}
+
+
+		}
 	}
 
 	&-content {

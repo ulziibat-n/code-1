@@ -60,6 +60,25 @@
 		align-items: center;
 		text-align: center;
 
+		&.aos-init {
+
+			> * {
+				opacity: 0;
+				transform: translateY(50px);
+				transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+				transition-delay: calc(0.5s + calc(0.1s * var(--item-index)));
+				will-change: opacity, transform;
+			}
+
+			&.aos-animate {
+
+				> * {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+
 		&.is-horizontal {
 			flex-direction: row;
 			align-items: center;

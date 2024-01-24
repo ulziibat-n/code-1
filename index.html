@@ -11,7 +11,10 @@
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Vendors -->
+	<link rel="stylesheet" href="/vendors/aos.css">
+	<link rel="stylesheet" href="/vendors/splitting.css">
+	<link rel="stylesheet" href="/vendors/splitting-cells.css">
 	<!-- Theme Style -->
 	<link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -94,7 +97,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-6  ">
-						<div class="hero-content">
+						<div class="hero-content" data-aos="fade-right">
 							<h1>The Workflow Revolution You've Been Waiting For</h1>
 							<p>Creating tomorrow's possibilities, Radiant pioneers innovation with excellence at its
 								core. Join us in shaping a
@@ -116,7 +119,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 ">
-						<div class="hero-image">
+						<div class="hero-image" data-aos="">
 							<img src="images/hero-image.jpg" alt="Hero Image">
 						</div>
 					</div>
@@ -152,7 +155,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="cold-12 col-md-6 ">
-						<div class="about-image">
+						<div class="about-image" data-aos="">
 							<img src="images/about.jpg" alt="About">
 						</div>
 					</div>
@@ -165,7 +168,7 @@
 								innovative features.</p>
 							<ul>
 								<li>
-									<svg width="100%" style="" viewBox="0 0 24 25" fill="none"
+									<svg width="100%" viewBox="0 0 24 25" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M13.5773 6.53398C12.9305 6.09336 12.4641 5.62695 12.1688 5.28711C11.8734 5.62695 11.4047 6.09102 10.7555 6.53398C9.54375 7.35898 8.15625 7.81367 6.62109 7.89102V13.3496C6.62109 13.5488 6.64687 13.7809 6.70078 14.0387C6.70078 14.0387 7.36875 18.2434 12.1688 20.416C12.1688 20.416 15.6539 19.0965 17.1844 15.4004C17.5406 14.5871 17.7094 13.8582 17.7094 13.3496V7.89102C16.1742 7.81367 14.7867 7.35898 13.5773 6.53398Z"
@@ -189,7 +192,7 @@
 									<span>Non et mollit laboris qui amet laborum sint</span>
 								</li>
 								<li>
-									<svg width="100%" style="" viewBox="0 0 24 25" fill="none"
+									<svg width="100%" viewBox="0 0 24 25" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M19.2844 11.7253C19.2868 11.7323 19.2891 11.737 19.2915 11.744C19.2891 11.7394 19.2868 11.7323 19.2844 11.7253ZM19.5633 12.6979C19.5657 12.7073 19.568 12.719 19.5704 12.7284C19.568 12.719 19.5657 12.7097 19.5633 12.6979ZM19.4883 12.3675C19.4907 12.3745 19.493 12.3839 19.4954 12.3909C19.493 12.3839 19.4907 12.3769 19.4883 12.3675ZM19.3407 11.8729C19.343 11.8823 19.3477 11.8917 19.35 11.9011C19.3477 11.894 19.343 11.8847 19.3407 11.8729ZM13.9383 16.4479C13.9383 16.4456 13.936 16.4456 13.936 16.4433C13.936 16.4456 13.936 16.4479 13.9383 16.4479ZM14.775 16.1784C14.768 16.1831 14.7633 16.1901 14.7563 16.1948C14.761 16.1878 14.768 16.1831 14.775 16.1784ZM19.4461 12.2058C19.4485 12.2151 19.4508 12.2222 19.4532 12.2315C19.4508 12.2245 19.4485 12.2151 19.4461 12.2058ZM14.618 16.3401C14.5993 16.3636 14.5805 16.3917 14.5618 16.4175C14.5805 16.3894 14.5993 16.3636 14.618 16.3401ZM18.8391 10.83C18.8415 10.8347 18.8461 10.8394 18.8485 10.844C18.8461 10.8417 18.8438 10.837 18.8391 10.83ZM14.6813 16.2651C14.6743 16.2745 14.6649 16.2815 14.6579 16.2909C14.6649 16.2839 14.6743 16.2745 14.6813 16.2651ZM13.8797 16.312C13.8774 16.3073 13.8774 16.305 13.875 16.3003C13.8774 16.305 13.8797 16.3073 13.8797 16.312ZM14.379 16.7831C14.3743 16.7925 14.3719 16.8019 14.3672 16.8136C14.3719 16.8042 14.3743 16.7948 14.379 16.7831ZM19.0008 11.1089C19.0055 11.1183 19.0125 11.13 19.0172 11.1394C19.0125 11.1276 19.0055 11.1183 19.0008 11.1089ZM14.6461 16.3073C14.6368 16.3167 14.6297 16.3284 14.6204 16.3378C14.6297 16.3261 14.6368 16.3167 14.6461 16.3073ZM16.3969 17.2565C16.3946 17.2542 16.3922 17.2519 16.3922 17.2495C16.3922 17.2542 16.3946 17.2542 16.3969 17.2565ZM14.8172 16.1433C14.8125 16.1479 14.8079 16.1503 14.8032 16.155C14.8079 16.1526 14.8125 16.1479 14.8172 16.1433ZM14.3133 16.9729C14.3016 16.9636 14.2899 16.9519 14.2782 16.9401C14.2899 16.9519 14.3016 16.9612 14.3133 16.9729ZM19.8282 14.1862L19.7016 14.0972L19.8938 14.2308L19.8282 14.1862ZM13.8282 16.1597C13.8258 16.1526 13.8235 16.1479 13.8235 16.1409C13.8258 16.1456 13.8282 16.1526 13.8282 16.1597ZM14.454 16.6097C14.4797 16.5581 14.5055 16.5112 14.5313 16.4644C14.4915 16.5323 14.4516 16.605 14.4165 16.687C14.4282 16.6612 14.4422 16.6354 14.454 16.6097ZM18.4547 10.3003C18.4641 10.312 18.4711 10.3214 18.4805 10.3331C18.4735 10.3214 18.4641 10.3097 18.4547 10.3003ZM13.854 16.237C13.8516 16.2323 13.8493 16.2276 13.8493 16.2206C13.8516 16.2276 13.8516 16.2323 13.854 16.237ZM19.6852 13.6565C19.6852 13.6729 19.6875 13.687 19.6875 13.7034C19.6875 13.6894 19.6852 13.6729 19.6852 13.6565ZM14.3438 16.8769C14.3415 16.8815 14.3391 16.8886 14.3391 16.8933C14.3415 16.8886 14.3438 16.8815 14.3438 16.8769ZM19.6172 13.0073C19.6196 13.0167 19.6196 13.0237 19.6219 13.0331C19.6196 13.0261 19.6196 13.0167 19.6172 13.0073ZM19.6735 13.4948C19.6758 13.5112 19.6758 13.53 19.6782 13.5464C19.6758 13.53 19.6735 13.5136 19.6735 13.4948ZM18.661 10.5651C18.6657 10.5722 18.6704 10.5792 18.6774 10.5862C18.6727 10.5815 18.668 10.5722 18.661 10.5651ZM19.6594 13.3401C19.6618 13.3542 19.6618 13.3683 19.6641 13.3847C19.6618 13.3706 19.6618 13.3542 19.6594 13.3401Z"
@@ -225,7 +228,7 @@
 									<span>tempor quis elit aliqua officia. Irure ut et non culpa</span>
 								</li>
 								<li>
-									<svg width="100%" style="" viewBox="0 0 24 25" fill="none"
+									<svg width="100%" viewBox="0 0 24 25" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M15.7054 20.8941H4.83276C4.18589 20.8941 3.66089 20.3691 3.66089 19.7222V8.55188C3.66089 7.905 4.18589 7.38 4.83276 7.38H15.7031C16.35 7.38 16.875 7.905 16.875 8.55188V19.7222C16.8773 20.3714 16.3523 20.8941 15.7054 20.8941Z"
@@ -260,8 +263,7 @@
 							</ul>
 							<a href="#" class="btn btn-primary has-icon">
 								<span>Learn More</span>
-								<svg width="100%" style="" viewBox="0 0 24 25" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
+								<svg width="100%" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g clip-path="url(#Arrowrightalt_clip0-193-279)">
 										<path
 											d="M16.01 11.7917H4V13.7917H16.01V16.7917L20 12.7917L16.01 8.79175V11.7917Z"
@@ -284,15 +286,15 @@
 		<!-- Start portfolio section -->
 		<section class="site-section portfolio">
 			<div class="container">
-				<div class="site-section-title">
+				<div class="site-section-title" data-aos="" data-splitting="items">
 					<span>The essence of it all</span>
 					<h2>our company’s protfolio</h2>
 					<p>Unlock the future of healthcare: Immerse yourself in a transformative experience powered by
 						innovative features.</p>
 				</div>
-				<div class="portfolio-row">
-					<div class="portfolio-card">
-						<div class="portfolio-content">
+				<div class="portfolio-row" data-splitting="items">
+					<div class="portfolio-card" data-aos="fade-up">
+						<div class="portfolio-content" data-splitting="items">
 							<svg xmlns="http://www.w3.org/2000/svg" width="100" height="101" viewBox="0 0 100 101"
 								fill="none">
 								<path
@@ -325,8 +327,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="portfolio-card">
-						<div class="portfolio-content">
+					<div class="portfolio-card" data-aos="fade-up">
+						<div class="portfolio-content" data-splitting="items">
 							<svg xmlns="http://www.w3.org/2000/svg" width="100" height="101" viewBox="0 0 100 101"
 								fill="none">
 								<path
@@ -359,8 +361,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="portfolio-card">
-						<div class="portfolio-content">
+					<div class="portfolio-card" data-aos="fade-up">
+						<div class="portfolio-content" data-splitting="items">
 							<svg xmlns="http://www.w3.org/2000/svg" width="100" height="101" viewBox="0 0 100 101"
 								fill="none">
 								<path
@@ -393,8 +395,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="portfolio-card">
-						<div class="portfolio-content">
+					<div class="portfolio-card" data-aos="fade-up">
+						<div class="portfolio-content" data-splitting="items">
 							<svg xmlns="http://www.w3.org/2000/svg" width="100" height="101" viewBox="0 0 100 101"
 								fill="none">
 								<path
@@ -668,8 +670,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="./js/scripts.js"></script>
+	<script src="/vendors/aos.js"></script>
+	<script src="/vendors/splitting.min.js"></script>
+	<script src="/js/scripts.js"></script>
 </body>
 
 </html>

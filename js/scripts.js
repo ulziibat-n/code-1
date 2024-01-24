@@ -1,8 +1,12 @@
 (function () {
   'use strict';
 
+  // Intiallize AOS.js
   // eslint-disable-next-line no-undef
   AOS.init();
+  // Intiallize splitting.js
+  // eslint-disable-next-line no-undef
+  Splitting();
 
   console.log('hello world');
   var link = document.querySelectorAll('.nav-link');
